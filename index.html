@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Yahtzee</h1>
+        <div class="dice-container">
+            <div class="die" id="die1">⚀</div>
+            <div class="die" id="die2">⚀</div>
+            <div class="die" id="die3">⚀</div>
+            <div class="die" id="die4">⚀</div>
+            <div class="die" id="die5">⚀</div>
+        </div>
+        <button id="roll-button">Roll Dice</button>
+        <button id="reset-button">Reset Game</button>
+        <div id="turns-left">Turns left: 13</div>
+        <div id="total-score"></div>
+        <div class="scorecard">
+            <h2>Scorecard</h2>
+            <ul id="score-list">
+                <li data-category="ones">Ones: <span id="score-ones">0</span></li>
+                <li data-category="twos">Twos: <span id="score-twos">0</span></li>
+                <li data-category="threes">Threes: <span id="score-threes">0</span></li>
+                <li data-category="fours">Fours: <span id="score-fours">0</span></li>
+                <li data-category="fives">Fives: <span id="score-fives">0</span></li>
+                <li data-category="sixes">Sixes: <span id="score-sixes">0</span></li>
+                <li data-category="three-kind">Three of a Kind: <span id="score-three-kind">0</span></li>
+                <li data-category="four-kind">Four of a Kind: <span id="score-four-kind">0</span></li>
+                <li data-category="full-house">Full House: <span id="score-full-house">0</span></li>
+                <li data-category="small-straight">Small Straight: <span id="score-small-straight">0</span></li>
+                <li data-category="large-straight">Large Straight: <span id="score-large-straight">0</span></li>
+                <li data-category="yahtzee">Yahtzee: <span id="score-yahtzee">0</span></li>
+                <li data-category="chance">Chance: <span id="score-chance">0</span></li>
+            </ul>
+        </div>
+        <div id="scoreboard" style="display: none;">
+            <h3>Final Scoreboard</h3>
+            <ul id="final-score-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

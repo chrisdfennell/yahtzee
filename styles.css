@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.die {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.scorecard {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.scorecard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scorecard li {
+    margin: 5px 0;
+}
+
+#score-list li:hover {
+    cursor: pointer;
+    background-color: #b3e5fc;
+}
+
+#score-list li.scored {
+    pointer-events: none;
+    color: gray;
+}
+
+.die {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.5s ease-in-out, background-color 0.3s;
+}
+
+.die.rolling {
+    transform: rotate(360deg);
+}
+
+.die.held {
+    background-color: red;
+    border: 2px solid darkred;
+}
+
+#score-list li:hover {
+    cursor: pointer;
+    background-color: #b3e5fc;
+}
+
+#score-list li.scored {
+    pointer-events: none;
+    color: gray;
+}
+
+#reset-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
